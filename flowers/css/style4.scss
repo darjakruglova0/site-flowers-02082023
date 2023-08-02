@@ -1,0 +1,162 @@
+@import "style-general.scss";
+
+
+.section{
+  padding: 5rem 0 7rem;
+}
+
+.catalog{
+  position: relative;
+  &__btn{
+    background-color: transparent;
+    color: $text-active;
+    border:1px solid $text-active ;
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+    padding: 0.7em 1.7em;
+    &:hover{
+     
+      color: $text-color;
+      background:$gradient-color;
+    }
+  }
+&__bg-1 {
+position: absolute;
+left: 0;
+top: 0;
+z-index: -1;
+}
+
+&__bg-2 {
+  position: absolute;
+right: 0;
+bottom: 0;
+z-index: -1;
+
+}
+
+.catalog__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    gap: 1rem;
+}
+
+.catalog__item {
+  position: relative;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 49%;
+    flex: 0 0 49%;
+    padding:0 0 0 40px;
+    background-image: url(/img/card-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 150px 0px 10px;
+    justify-content: space-between;
+    overflow: hidden;
+    .categ-link{
+      display: block;
+      margin-bottom: 7px;
+      color:$text-color;
+      font-size: calc(12px + 4 * (100vw - 400px) / 1920);
+    }
+    .categ-link::before {
+      content: "";
+      background: linear-gradient(211deg, #C38B34 27.99%, #ECC47E 80.38%);
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      margin-right: 0.5rem;
+  }
+    .catalog__content{
+      padding-top: 20px;
+
+    }
+    &__title
+{
+  font-size: calc(19px + 16 * (100vw - 400px) / 1920);
+font-family:$fonts;
+background: $gradient-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin-bottom: 20px;
+    }
+}
+}
+
+
+
+@media (max-width: 830px){
+  .catalog {
+    .catalog__items{
+      justify-content: center;
+    }
+    
+   &__item {
+    flex: 0 0 100%;
+    border-radius: 10px 108px 0px 10px;
+    padding: 0 0 0 10px;
+  
+}
+  }
+
+
+
+  .catalog {
+
+		// .catalog__item
+
+		&__item {
+		}
+
+		// .catalog__content
+
+		&__content {
+		}
+
+		// .catalog__btn
+
+		&__btn {
+		}
+}
+.catalog-item {
+
+		// .catalog-item__categ
+
+		&__categ {
+		}
+}
+.categ-link {
+}
+.shop-item {
+
+		// .shop-item__buttons
+
+		&__buttons {
+		}
+}
+.btn {
+}
+.added {
+
+		// .added_to
+
+		&_to {
+		}
+}
+.catalog-choose {
+
+		// .catalog-choose__img
+
+		&__img {
+		}
+}
+
+}
